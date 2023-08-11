@@ -1,0 +1,411 @@
+/* General styles */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Rubik Dirt', cursive;
+}
+
+.dark-section{
+  /* background-color: #1b1b32;  */
+  background-color:rgb(134,199,220);
+  color: white;
+}
+
+.light-section{
+  color: black;
+  background-color: white;
+}
+
+.header-section{
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Rubik Dirt', cursive;
+}
+.description-section{
+  font-size: 1.2rem;
+  color: #584e4e;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-section{
+  font-size: 1.2rem;
+}
+
+.info-btn {
+  font-size: 1.5rem;
+  margin: 20px;
+  padding: 5px 120px;
+}
+
+.black-text {
+  color: black;
+}
+
+.white-text {
+  color: white;
+}
+
+
+/* Navigation Bar  */
+.navbar {
+  padding: 2rem;
+  background-color: #f5f6f7;
+  
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hero Section */
+.hero {
+background-color: #f5f6f7;
+min-height: 450px;
+text-align: center;
+}
+.hero-principal{
+  padding: 3rem;
+}
+
+.hero-principal-image{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.hero-principal h2{
+  font-size: 1.5rem;
+  color: #615151;
+}
+
+/* About Me Section */
+.about-me{
+  height: 500px;
+  padding: 10px;
+}
+
+.about-me .container-personalized{
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Experience Section */
+.experience{
+  padding: 40px 40px 60px 40px;
+}
+
+.experience i{
+  font-size: 2.5rem;
+  color:rgb(134,199,220);
+  background-color: rgb(245,190,68);
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.header-experience{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.container-badges{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge{
+  margin: 5px;
+}
+
+.experience .column {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experience .column:hover {
+color: white;
+background-color: rgb(245,190,68);
+}
+
+/* Proyect Section */
+.recent-proyect{
+  padding: 40px;
+}
+
+.recent-proyects img{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyect-container {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay{
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+  
+}
+
+.proyect {
+  position: relative;
+}
+
+.proyect:hover img{
+  opacity: 0.2;
+}
+
+.proyect:hover .overlay{
+  opacity: 1;
+}
+
+.overlay .container-icons {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+/* Articles Section */
+.articles {
+  min-height: 500px;
+  padding: 30px;
+  /* background-color: rgb(245,190,68, 1); */
+}
+
+.articles .card{
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.card-header {
+  font-weight: bold;
+}
+
+/* Testimonies Section */
+.testimonies-section {
+  padding: 40px 40px 80px 40px;
+}
+
+.testimonies-section .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-testimonies{
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.text-testimonies {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.info-testimonies {
+  font-weight: bold;
+  text-align: center;
+} 
+
+.text-testimonies p{
+  margin-bottom: 0;
+}
+
+.testimonies-footer .client {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.testimonies-footer .position {
+  font-size: .9rem;
+  color: #656060;
+}
+
+/* Contact Me Section */
+
+.contact-me .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contact-me .rectangle {
+  margin-top: -5rem;
+  background-color: rgb(245,190,68);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+
+
+.contact-me .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contact-me .description {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contact-me button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all .2s ease-in-out;
+}
+
+.contact-me button:hover {
+  background-color: white;
+  color: rgb(245,190,68);
+}
+
+.contact-me button:hover i{
+  color: rgb(245,190,68);
+}
+
+.contact-me button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Footer Section */
+footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 100px;
+  padding: 10px;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.social-media-icons a{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white ;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.social-media-icons i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.social-media-icons a:hover {
+  background-color: white;
+  border: 2px solid rgb(245,190,68);
+  background-color: rgb(245,190,68);
+}
+
+.social-media-icons a:hover i {
+  color: black;
+}
+
+.copyrights {
+  padding: 20px;
+  justify-content: right;
+  font-size: 15px;
+  color: rgb(238, 227, 227);
+}
+
+
+
+/* Adaptable (resposive) */
+@media screen and (max-width:767px){
+  .navbar-brand{
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  .hero-inferior-image{
+    max-width: 600px;
+  }
+} 
+
+@media screen and (max-width: 800px){
+  .image-testimonies{
+    height: 120px;
+    width: 120px;
+  }
+  .text-testimonies {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .overlay p {
+    font-size: 18px;
+  }
+  .overlay i{
+    font-size: 40px;
+  }
+}
